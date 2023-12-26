@@ -1,7 +1,4 @@
 import Header from "../../components/Header";
-import ProductCard from "../../components/ProductCard";
-import { getProducts } from "../../fakerData/products";
-import { useProductStore } from "../../store/productStore";
 import ProductListing from "./ProductListing";
 
 const ProductsScreen = () => {

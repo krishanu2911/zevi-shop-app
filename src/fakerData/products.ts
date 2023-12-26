@@ -10,6 +10,7 @@ export const getProducts = (count: number): productInterface[] => {
       productName: faker.commerce.productName(),
       productImg: faker.image.urlPicsumPhotos({ width: 320, height: 380 }), // defined aspect ratio
       rating: faker.number.int({ min: 0, max: 5 }),
+      rateCount: faker.number.int({max: 999}) ,
       newPrice: parseFloat(faker.commerce.price()),
       oldPrice: parseFloat(faker.commerce.price()),
     };
