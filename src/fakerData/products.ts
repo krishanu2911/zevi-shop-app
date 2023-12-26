@@ -8,7 +8,7 @@ export const getProducts = (count: number): productInterface[] => {
     const singleProdData: productInterface = {
       id: faker.string.uuid(),
       productName: faker.commerce.productName(),
-      productImg: faker.image.urlPicsumPhotos({ width: 320, height: 480 }), // defined aspect ratio
+      productImg: faker.image.urlPicsumPhotos({ width: 320, height: 380 }), // defined aspect ratio
       rating: faker.number.int({ min: 0, max: 5 }),
       newPrice: parseFloat(faker.commerce.price()),
       oldPrice: parseFloat(faker.commerce.price()),
