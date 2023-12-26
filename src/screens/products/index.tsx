@@ -15,11 +15,6 @@ const ProductsScreen = () => {
             <FilterSection />
           </div>
           <ProductListing />
-          {/* <div className="flex-1 grid md:grid-cols-4 grid-cols-2  gap-4 pt-8 ">
-            {products.map((item) => (
-              <ProductCard product={item} />
-            ))}
-          </div> */}
         </div>
       </div>
     </div>

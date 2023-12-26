@@ -8,8 +8,9 @@ import Rating from "../Rating";
 
 const RatingFilter = () => {
   const [itemVisible, setItemVisible] = useState<boolean>(false);
-  const { setRatingFilter } = useProductStore((state) => ({
+  const { setRatingFilter, ratingFilter } = useProductStore((state) => ({
     setRatingFilter: state.setRatingFilter,
+    ratingFilter: state.ratingFilter
   }));
   const ratingFilters:number[] = [1,2,3,4,5]
 
@@ -31,11 +32,12 @@ const RatingFilter = () => {
                   type="radio"
                   name="ratingFilter"
                   id={`item_${item}`}
+                  checked={item === ratingFilter}
                   value={item}
                   onChange={() => setRatingFilter(item)}
                 />
-                <label htmlFor={`item_${item}`}>
-                  <Rating score={item} />
+                <label className=" flex" htmlFor={`item_${item}`}>
+                  <Rating score={item} /><span className=" text-sm text-black/50">& up</span> 
                 </label>
               </div>
             );

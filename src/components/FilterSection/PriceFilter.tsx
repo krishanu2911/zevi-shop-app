@@ -17,9 +17,12 @@ const priceFilters: priceFilterInterface[] = [
 
 const PriceFilter = () => {
   const [itemVisible, setItemVisible] = useState<boolean>(false);
-  const { setPriceFilterRange } = useProductStore((state) => ({
-    setPriceFilterRange: state.setPriceFilterRange,
-  }));
+  const { setPriceFilterRange, priceFilterRange } = useProductStore(
+    (state) => ({
+      setPriceFilterRange: state.setPriceFilterRange,
+      priceFilterRange: state.priceFilterRange,
+    })
+  );
 
   return (
     <div className="w-full border-b border-black/20 pb-4">
@@ -40,6 +43,7 @@ const PriceFilter = () => {
                   name="priceFilter"
                   id={`item_${item.priceLable}`}
                   value={item.priceLable}
+                  checked={item.range === priceFilterRange}
                   onChange={() => setPriceFilterRange(item.range)}
                 />
                 <label htmlFor={`item_${item.priceLable}`}>

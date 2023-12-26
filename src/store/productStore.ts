@@ -10,6 +10,7 @@ export interface ProductStoreInterface {
   setPriceFilterRange: (data?: number[]) => void;
   ratingFilter: number | undefined;
   setRatingFilter: (data?: number) => void;
+  clearFilterHandler: () => void;
 }
 
 export const useProductStore = create<ProductStoreInterface>((set, get) => ({
@@ -47,6 +48,13 @@ export const useProductStore = create<ProductStoreInterface>((set, get) => ({
     set((state) => ({
       ...state,
       wishlist: updatedWishList,
+    }));
+  },
+  clearFilterHandler: () => {
+    set((state) => ({
+      ...state,
+      ratingFilter: undefined,
+      priceFilterRange: undefined,
     }));
   },
 }));
