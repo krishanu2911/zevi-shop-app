@@ -29,7 +29,7 @@ const RatingFilter = () => {
               <div className=" flex gap-2">
                 <input
                   type="radio"
-                  name="priceFilter"
+                  name="ratingFilter"
                   id={`item_${item}`}
                   value={item}
                   onChange={() => setRatingFilter(item)}
