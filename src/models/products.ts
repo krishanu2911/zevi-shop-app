@@ -3,6 +3,7 @@ export interface productInterface {
   productName: string;
   productImg: string;
   rating: number;
+  rateCount: number;
   newPrice: number;
   oldPrice: number;
 }
