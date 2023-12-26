@@ -27,7 +27,7 @@ const RatingFilter = () => {
         <div className="flex flex-col gap-2 mt-2">
           {ratingFilters.map((item) => {
             return (
-              <div className=" flex gap-2">
+              <div className=" flex flex-wrap gap-2">
                 <input
                   type="radio"
                   name="ratingFilter"
@@ -36,7 +36,7 @@ const RatingFilter = () => {
                   value={item}
                   onChange={() => setRatingFilter(item)}
                 />
-                <label className=" flex" htmlFor={`item_${item}`}>
+                <label className=" flex flex-wrap" htmlFor={`item_${item}`}>
                   <Rating score={item} /><span className=" text-sm text-black/50">& up</span> 
                 </label>
               </div>

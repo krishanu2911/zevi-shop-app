@@ -8,7 +8,7 @@ const ProductsScreen = () => {
       <Header searchBar={true} />
       <div className=" flex-1 px-6 flex flex-col">
         <div className=" flex-1 flex mt-8 ">
-          <div className=" w-1/4 ">
+          <div className=" md:w-1/4 w-1/3 ">
             <h1 className=" md:text-2xl sm:text-sm text-xs font-medium mb-4">
               Search Results
             </h1>

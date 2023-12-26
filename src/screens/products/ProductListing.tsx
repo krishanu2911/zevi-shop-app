@@ -30,7 +30,7 @@ const ProductListing = () => {
     filteredProducts.length ?
     <div className="flex-1 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-4 pt-12 pb-4 ">
       {filteredProducts.map((item) => (
-        <ProductCard product={item} />
+        <ProductCard key={item.id} product={item} />
       ))}
     </div> : <div className=" flex-1 flex justify-center items-center"><h1>No Products to show</h1></div>
   );

@@ -11,9 +11,10 @@ const Rating: React.FC<Props> = ({ score, rateCount }) => {
   for (let i = 1; i <= totalRating; i++) {
     ratingStars.push(
       <img
+      key={`rate_${i}`}
         src={i <= score ? startGold : starGrey}
         alt="rating starts"
-        className=" w-4 h-4"
+        className=" sm:w-4 sm:h-4 w-3 h-3"
       />
     );
   }
