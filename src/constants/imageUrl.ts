@@ -12,3 +12,5 @@ export const starGrey =
   "https://res.cloudinary.com/krishanucloud/image/upload/v1703582794/StarGrey_yhihtg.png";
 export const startGold =
   "https://res.cloudinary.com/krishanucloud/image/upload/v1703582793/StarGold_gpqkui.png";
+export const downArrow =
+  "https://res.cloudinary.com/krishanucloud/image/upload/v1703591992/angle-right_ebzzpe.png";

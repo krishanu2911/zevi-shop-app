@@ -19,7 +19,7 @@ const ProductListing = () => {
   }, []);
 
   return (
-    <div className="flex-1 grid md:grid-cols-4 grid-cols-2  gap-4 pt-8 ">
+    <div className="flex-1 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-4 pt-12 ">
       {products.map((item) => (
         <ProductCard product={item} />
       ))}

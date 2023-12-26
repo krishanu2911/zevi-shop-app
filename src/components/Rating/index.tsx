@@ -18,7 +18,11 @@ const Rating: React.FC<Props> = ({ score, rateCount }) => {
     );
   }
 
-  return <div className="flex gap-2 items-center">{ratingStars} <h1 className="text-xs">{rateCount}</h1></div>;
+  return (
+    <div className="flex gap-2 items-center">
+      {ratingStars} <h1 className="text-xs">{rateCount}</h1>
+    </div>
+  );
 };
 
 export default Rating;

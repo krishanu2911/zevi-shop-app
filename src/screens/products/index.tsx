@@ -1,3 +1,4 @@
+import FilterSection from "../../components/FilterSection";
 import Header from "../../components/Header";
 import ProductListing from "./ProductListing";
 
@@ -8,9 +9,10 @@ const ProductsScreen = () => {
       <div className=" flex-1 px-6 flex flex-col">
         <div className=" flex-1 flex mt-8 ">
           <div className=" w-1/4 ">
-            <h1 className=" md:text-2xl sm:text-sm text-xs font-medium">
+            <h1 className=" md:text-2xl sm:text-sm text-xs font-medium mb-4">
               Search Results
             </h1>
+            <FilterSection />
           </div>
           <ProductListing />
           {/* <div className="flex-1 grid md:grid-cols-4 grid-cols-2  gap-4 pt-8 ">
