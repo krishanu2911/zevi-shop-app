@@ -1,9 +1,13 @@
 import "./App.css";
-import { faker } from "@faker-js/faker"
+import RoutePath from "./routes";
 
 const App = () => {
-  console.log(faker.commerce.product(), "fake data")
-  return <div className=" w-full min-h-screen bg-red-300">Hello Zevi Shop</div>;
+
+  return (
+    <div className=" w-full min-h-screen bg-red-300">
+      <RoutePath />
+    </div>
+  );
 };
 
 export default App;
