@@ -2,7 +2,7 @@ import { starGrey, startGold } from "../../constants/imageUrl";
 
 interface Props {
   score: number;
-  rateCount: number;
+  rateCount?: number;
 }
 
 const Rating: React.FC<Props> = ({ score, rateCount }) => {
