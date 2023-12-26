@@ -4,7 +4,7 @@ import { faker } from "@faker-js/faker";
 export const getProducts = (count: number): productInterface[] => {
   const products: productInterface[] = [];
 
-  for (let i = 0; i < count; count++) {
+  for (let i = 0; i < count; i++) {
     const singleProdData: productInterface = {
       id: faker.string.uuid(),
       productName: faker.commerce.productName(),
@@ -21,7 +21,7 @@ export const getProducts = (count: number): productInterface[] => {
 
 export const getPopularSuggestion = (count: number): string[] => {
   const suggestions: string[] = [];
-  for (let i = 0; i < count; count++) {
+  for (let i = 0; i < count; i++) {
     const productName: string = faker.commerce.productName();
     suggestions.push(productName);
   }
